@@ -19,6 +19,15 @@
 \date{\today}
 
 % --- Eigene Befehle  ---
+\newcommand{\abbildung}[5]{
+    \begin{figure}[#1]
+        \includegraphics[width=#2\textwidth]{anhang/#3}\label{#4}
+        \caption{#5}
+    \end{figure}
+}
+\newcommand{\fett}[1]{\textbf{#1}}
+\newcommand{\kursiv}[1]{\textit{#1}}
+\newcommand{\unterstrichen}[1]{\underline{#1}}
 \newcommand{\wichtig}[1]{\textbf{\textcolor{red}{#1}}} % Wichtige Begriffe hervorheben
 
 % --- Dokumentenbeginn ---
