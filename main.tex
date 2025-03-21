@@ -1,0 +1,75 @@
+\documentclass[10pt]{article}
+
+% --- Pakete ---
+\usepackage[utf8]{inputenc} % Für deutsche Umlaute
+\usepackage[ngerman]{babel} % Deutsche Anpassungen
+\usepackage{amsmath, amssymb} % Mathematische Symbole und Umgebungen
+\usepackage{graphicx}        % Für Bilder
+\usepackage{geometry}        % Seitenränder anpassen
+\usepackage{enumitem}       % Für Listen
+\usepackage{hyperref}       % Für anklickbare Verweise (Inhaltsverzeichnis)
+\usepackage{xcolor}         % Für Farben
+
+% --- Seitenränder ---
+\geometry{a4paper, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+% --- Titelseite ---
+\title{Vorlesungsskript: [Name der Vorlesung]}
+\author{Dein Name}
+\date{\today}
+
+% --- Eigene Befehle  ---
+\newcommand{\wichtig}[1]{\textbf{\textcolor{red}{#1}}} % Wichtige Begriffe hervorheben
+
+% --- Dokumentenbeginn ---
+\begin{document}
+
+\maketitle % Titelseite anzeigen
+\tableofcontents % Inhaltsverzeichnis
+
+\newpage % Neue Seite nach dem Inhaltsverzeichnis
+
+% --- Kapitel 1 ---
+\section{Thema des Kapitels}
+
+\subsection{Thema des Unterpunkts}
+
+Zusammenfassung des ersten Unterpunkts.
+
+\begin{itemize}
+    \item Wichtiger Punkt 1
+    \item Wichtiger Punkt 2
+\end{itemize}
+
+\textbf{Definition:} Hier Definition einfügen
+
+\textbf{Formel:}
+\[
+    E = mc^2
+\]
+
+\subsection{Thema des Unterpunkts}
+
+...
+
+% --- Kapitel 2 ---
+\section{Thema des Kapitels}
+
+...
+
+% --- Anhang ---
+\appendix
+\section{Formelsammlung}
+
+Hier können wichtige Formeln übersichtlich aufgelistet werden.
+
+\section{Glossar}
+
+Hier können wichtige Begriffe erklärt werden.
+
+\section{Literatur}
+
+Hier kann relevante Literatur zum Nachlesen erwähnt werden.
+
+% --- Dokumentenende ---
+\end{document}
