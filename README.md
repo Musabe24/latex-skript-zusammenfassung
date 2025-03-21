@@ -1,1 +1,1 @@
-LaTex Vorlage zur Zusammenfassung von Vorlesungsskripten
+Eine minimalistische LaTex Vorlage zur Zusammenfassung von Vorlesungsskripten
