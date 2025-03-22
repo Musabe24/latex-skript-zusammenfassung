@@ -9,6 +9,7 @@
 \usepackage{enumitem}       % Für Listen
 \usepackage{hyperref}       % Für anklickbare Verweise (Inhaltsverzeichnis)
 \usepackage{xcolor}         % Für Farben
+\usepackage{multicol}
 
 % --- Seitenränder ---
 \geometry{a4paper, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
@@ -19,12 +20,7 @@
 \date{\today}
 
 % --- Eigene Befehle  ---
-\newcommand{\abbildung}[5]{
-    \begin{figure}[#1]
-        \includegraphics[width=#2\textwidth]{anhang/#3}\label{#4}
-        \caption{#5}
-    \end{figure}
-}
+\newcommand{\abbildung}[2]{\includegraphics[width=#1\textwidth]{anhang/#2}}
 \newcommand{\fett}[1]{\textbf{#1}}
 \newcommand{\kursiv}[1]{\textit{#1}}
 \newcommand{\unterstrichen}[1]{\underline{#1}}
@@ -37,6 +33,8 @@
 \tableofcontents % Inhaltsverzeichnis
 
 \newpage % Neue Seite nach dem Inhaltsverzeichnis
+
+\begin{multicols}{2} % Beginn der 2-spaltigen Umgebung
 
 % --- Kapitel 1 ---
 \section{Thema des Kapitels}
@@ -65,6 +63,10 @@ Zusammenfassung des ersten Unterpunkts.
 \section{Thema des Kapitels}
 
 ...
+
+\end{multicols} % Ende der 2-spaltigen Umgebung
+
+\newpage
 
 % --- Anhang ---
 \appendix
